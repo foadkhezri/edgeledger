@@ -1,0 +1,109 @@
+/* what section */
+
+#what .boxes-container {
+    flex-direction: column;
+}
+
+/* contact section */
+
+#contact {
+    flex-direction: column;
+}
+
+#contact .map {
+    height: 300px;
+}
+
+/* who */
+
+
+#who {
+    text-align: center;
+}
+
+#who .who-img {
+    display: none;
+}
+
+
+/* Smartphones */
+
+@media (max-width: 600px) {
+    header #hamburger {
+        display: inline-block;
+        font-size: 2rem;
+        color: white;
+        z-index: 1;
+        position: fixed;
+        top: .75rem;
+        right: 1.5rem;
+        cursor: pointer;
+        transition: transform .5s ease-in-out;
+    }
+
+    header #hamburger:hover {
+        transform: rotate(180deg);
+    }
+
+    header #close {
+        display: inline-block;
+        margin: .75rem 0;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: transform .5s ease-in-out;
+    }
+
+    header #close:hover {
+        transform: rotate(180deg);
+    }
+
+    #navbar {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-start;
+        width: fit-content;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    #navbar ul li {
+        margin: 1rem;
+    }
+
+    #clients .clients-container .logo img {
+        width: 80%;
+    }
+}
+
+/* small smartphones */
+
+@media (max-height: 568px) {
+    .l-heading {
+        font-size: 3rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    #navbar ul li {
+        margin: .5rem 0;
+    }
+
+    #navbar ul li a {
+        padding: 0.5rem;
+
+    }
+}
